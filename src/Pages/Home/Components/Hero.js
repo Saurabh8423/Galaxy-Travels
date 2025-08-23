@@ -6,9 +6,7 @@ import "../Components/HomeStyles.css";
 const Hero = () => {
     return (
         <div className='hero'>
-            <video autoPlay loop muted>
-                <source src={video} type="video/mp4" />
-            </video>
+            <video src={video} autoPlay loop muted />
 
             <div className="content">
                 <h1>Travel. Galaxies</h1>
