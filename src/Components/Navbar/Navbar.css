@@ -28,11 +28,13 @@ nav.hamburger {
     .menu{
         width: 100%;
         position: absolute;
-        top: 10vh;
-        height: 90vh;
+        z-index: -1;
+        top: 0vh;
+        height: 100vh;
         left: -100%;
         flex-direction: column;
         gap: 30px;
+        background-color: rgba(0, 0, 0, 0.9);
     }
 
     .active{
