@@ -5,7 +5,7 @@ const About = () => {
     <>
       <h1 className='heading'>About Us</h1>
         <section className='about'>
-            <img src={require("../../../assets/about.avif")} alt="" />
+            <img src={require("../../../assets/aboutimg.jpg")} alt="" />
             <div className='content'>
                 <h2>Our Mission</h2>
                 <p>We are the pioneers in intergalactic travel, offering unparalleled experiences across the universe. Our mission is to make space travel accessible, safe, and unforgettable for everyone. Join us as we explore new frontiers and create memories that are truly out of this world!
