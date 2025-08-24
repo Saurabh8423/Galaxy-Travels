@@ -1,9 +1,9 @@
 import React from 'react'
 
-const About = () => {
+const About = ({heading}) => {
   return (
     <>
-      <h1 className='heading'>About Us</h1>
+      <h1 className='heading'>{heading}</h1>
         <section className='about'>
             <img src={require("../../../assets/aboutimg.jpg")} alt="" />
             <div className='content'>
@@ -18,4 +18,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About;
