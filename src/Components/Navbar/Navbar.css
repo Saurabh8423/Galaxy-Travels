@@ -9,6 +9,10 @@ nav{
     width: 100%;
 }
 
+.color{
+    background-color: #080808;
+}
+
 nav.hamburger {
     display: none;
 }

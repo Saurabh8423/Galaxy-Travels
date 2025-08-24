@@ -5,6 +5,7 @@ import About from './Components/About';
 import Services from './Components/Services';
 import CallToAction from './Components/CallToAction';
 import Faq from './Components/Faq';
+import Footer from '../../Components/Footer/Footer';
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <Services />
       <CallToAction />
       <Faq />
+      <Footer />
     </>
   );
 };
