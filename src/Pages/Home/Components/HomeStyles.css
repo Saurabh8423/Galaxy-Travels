@@ -7,7 +7,7 @@
 
 }
 
-.hero video {
+.hero video  {
     position: absolute;
     top: 0;
     left: 0;
@@ -15,6 +15,7 @@
     height: 100vh;
     object-fit: cover;
     z-index: -1;
+
 }
 
 .hero .content {
@@ -30,11 +31,14 @@
     height: 100vh;
     text-align: center;
     padding: 0 30px;
+    color: #fff;
 }
 
 .hero .content h1 {
-    font-size: 50px;
-    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .hero .content .buttons {
@@ -44,10 +48,34 @@
     gap: 30px;
 }
 
+.hero .content p {
+    font-size: 1.2rem;
+    color: #ddd;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero .content .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
 .hero .content .buttons a {
-    padding: 10px 40px;
+    padding: 12px 40px;
     background-color: transparent;
-    border: 1px solid white;
+    border: 2px solid white;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero .content .buttons a:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.05);
 }
 
 /* **************About Section************** */
@@ -173,7 +201,7 @@
 }
 
 .call-to-action button {
-   padding: 12px 35px;
+    padding: 12px 35px;
     background: linear-gradient(90deg, #e52e71, #ff8a00);
     border: none;
     border-radius: 30px;
@@ -182,7 +210,7 @@
     font-weight: bold;
     color: white;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -197,6 +225,7 @@
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);

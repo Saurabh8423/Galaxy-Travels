@@ -35,7 +35,7 @@ const Card = () => {
             data.map((item)=>{
                 const {id,heading, line1, line2, line3}= item;
                 return(
-                    <SingleCard heading={heading} line1={line1} line2={line2} line3={line3}/>
+                    <SingleCard key={id} heading={heading} line1={line1} line2={line2} line3={line3}/>
                 )
             })
         }
