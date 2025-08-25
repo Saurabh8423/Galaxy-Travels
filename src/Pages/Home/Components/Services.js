@@ -33,7 +33,7 @@ const Services = () => {
     <section className="services">
       <h1 className="heading">Our Services</h1>
       <Slider {...settings}>
-        <div>
+        <div className="service-card">
           <img src={img1} alt="Services 1" />
           <h2>Galactic Tours</h2>
         </div>

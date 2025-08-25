@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import video from '../../../assets/galaxy.mp4';
+import video from '../../../assets/space video.mp4';
 import "../Components/HomeStyles.css";
 
 const Hero = () => {
     return (
         <div className='hero'>
-          <video src={video} autoPlay loop muted playsInline />
+          <video src={video} autoPlay loop muted></video>
 
             <div className="content">
                 <h1>Travel. Galaxies</h1>

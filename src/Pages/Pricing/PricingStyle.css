@@ -28,6 +28,7 @@
 
 .card h2{
     font-size: 40px;
+    background: none;
 
 }
 
@@ -37,4 +38,5 @@
    align-items: center;
    gap: 20px;
    flex-direction: column;
+   background: none;
 }

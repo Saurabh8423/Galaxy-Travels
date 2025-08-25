@@ -9,12 +9,14 @@ const Header = ({ heading }) => {
       style={{
         backgroundImage: `url(${headerImg})`,
         backgroundSize: "cover",
-        backgroundPosition: "fixed",
+        backgroundAttachment: "fixed",
+        backgroundPosition: "center",
       }}
     >
       <h1>{heading}</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, id.
+        Discover breathtaking journeys beyond imagination. 
+        Let us take you to worlds where dreams and adventures collide.
       </p>
     </section>
   );
