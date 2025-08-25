@@ -157,26 +157,56 @@
     align-items: center;
     gap: 40px;
     flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    color: white;
 }
 
 .call-to-action h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 42px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    animation: fadeInDown 1s ease-in-out;
 }
 
 .call-to-action button {
-    padding: 10px 20px;
-    background: transparent;
-    border: 1px solid white;
-    border-radius: 5px;
+   padding: 12px 35px;
+    background: linear-gradient(90deg, #e52e71, #ff8a00);
+    border: none;
+    border-radius: 30px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
 
+}
+
+.call-to-action button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(229, 46, 113, 0.6);
+}
+
+/* Animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 800px) {
     .call-to-action {
         height: 250px;
-        gap: 30px;
+        gap: 25px;
     }
 
     .call-to-action h2 {
@@ -185,13 +215,31 @@
     }
 
     .call-to-action button {
-        padding: 8px 30px;
+        padding: 10px 28px;
     }
 }
 
 @media (max-width: 450px) {
     .call-to-action h2 {
         font-size: 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .call-to-action {
+        height: auto;
+        padding: 40px 15px;
+    }
+
+    .call-to-action h2 {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    .call-to-action button {
+        padding: 8px 25px;
+        font-size: 14px;
     }
 }
 
@@ -205,23 +253,29 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999999999;
+    animation: fadeIn 0.4s ease;
 }
 
 .overlay .modal {
     width: 600px;
+    max-width: 90%;
     height: 400px;
-    background: #080808;
-    padding: 20px 50px;
+    background: linear-gradient(145deg, #111, #1c1c1c);
+    padding: 40px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    animation: slideUp 0.4s ease;
 }
 
 .overlay .modal .cross {
@@ -229,21 +283,59 @@
     top: 20px;
     right: 20px;
     cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
-@media (max-width: 700px){
+.overlay .modal .cross:hover {
+    transform: scale(1.2);
+    color: #0f9dff;
+}
+
+@media (max-width: 700px) {
     .overlay .modal {
-    width: 500px;
-    height: 250px;
-    padding: 15px 30px;
+        width: 500px;
+        height: 250px;
+        padding: 15px 30px;
     }
 }
 
-@media (max-width: 400px){
+/* Animations */
+@keyframes fadeIn {
+    from {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.85);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
     .overlay .modal {
-    width: 300px;
-    height: 350px;
-    padding: 15px 30px;
+        padding: 25px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .overlay .modal {
+        padding: 20px 15px;
+        font-size: 14px;
     }
 }
 
@@ -251,89 +343,88 @@
 /* **************FAQ Section************** */
 
 .faq {
-  padding: 60px 20px;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
+    padding: 60px 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .faq .item {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .faq .item .wrapper {
-  background-color: #111;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  cursor: pointer;
+    background-color: #111;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .faq .item .wrapper:hover {
-  border-color: #0f9dff;
-  box-shadow: 0 5px 15px rgba(15, 157, 255, 0.3);
+    border-color: #0f9dff;
+    box-shadow: 0 5px 15px rgba(15, 157, 255, 0.3);
 }
 
 .faq .item .question {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 24px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
 }
 
 .faq .item .question h3 {
-  margin: 0;
-  font-size: 18px;
-  color: #f5f5f5;
+    margin: 0;
+    font-size: 18px;
+    color: #f5f5f5;
 }
 
 .faq .item .question img {
-  width: 22px;
-  transition: transform 0.4s ease;
+    width: 22px;
+    transition: transform 0.4s ease;
 }
 
 .reverse {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 /* Answers */
 .item .answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
 }
 
 .item .answer p {
-  padding: 0 24px 18px;
-  font-size: 15px;
-  line-height: 1.6;
-  color: #ccc;
+    padding: 0 24px 18px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ccc;
 }
 
 .answer.show {
-  max-height: 500px; /* large enough for smooth expansion */
+    max-height: 500px;
+    /* large enough for smooth expansion */
 }
 
 /* Responsive */
 @media (max-width: 600px) {
-  .faq {
-    padding: 40px 15px;
-  }
+    .faq {
+        padding: 40px 15px;
+    }
 
-  .faq .item .question {
-    font-size: 16px;
-  }
+    .faq .item .question {
+        font-size: 16px;
+    }
 
-  .faq .item .answer p {
-    font-size: 14px;
-  }
+    .faq .item .answer p {
+        font-size: 14px;
+    }
 }
-
-

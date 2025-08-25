@@ -7,8 +7,10 @@ const Modal = ({ handleClick}) => {
         <div className="cross">
             <FaTimes style={{color:"white"}} size={25} onClick={handleClick}/>
         </div>
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, atque dolore veritatis nulla rem cum animi ab explicabo nisi quaerat dolores ex necessitatibus. Voluptatibus, porro! Obcaecati, ipsam! Deserunt, laboriosam exercitationem.
-            
+        <h1>
+          🚀 Your journey to the stars begins here!  
+          Book your ticket today and secure an unforgettable experience of space
+          travel. Limited seats are available — don’t miss out on this once-in-a-lifetime adventure!
         </h1>
       </div>
     </div>
