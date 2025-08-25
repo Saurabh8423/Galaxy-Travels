@@ -1,5 +1,4 @@
 import { FaTimes } from 'react-icons/fa';
-// import "../Components/HomeStyles.css";
 
 const Modal = ({ handleClick}) => {
   return (
